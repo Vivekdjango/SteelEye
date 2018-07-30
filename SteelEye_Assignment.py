@@ -9,9 +9,9 @@ from botocore.client import Config
 
 #AWS credentials
 
-ACCESS_KEY_ID = 'AKIAJPQV6RB6YOEXBJTA'
-ACCESS_SECRET_KEY = '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'
-BUCKET_NAME = 'my-vivek-bucket-test1'
+ACCESS_KEY_ID = ''
+ACCESS_SECRET_KEY = ''
+BUCKET_NAME = ''
 
 #Reading file using Pandas library just replace filepath as per yours
 
@@ -22,8 +22,8 @@ print (data.head())
 
 #Converting to json
 
-data.to_json('json_data_new.json', orient="records")
-data = open('json_data_new.json', 'rb')
+data.to_json('json_data.json', orient="records")
+data = open('json_data.json', 'rb')
 
 #Uploading Data to S3
 
