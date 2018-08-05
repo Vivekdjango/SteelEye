@@ -22,8 +22,8 @@ print (data.head())
 
 #Converting to json
 
-data.to_json('json_data_new.json', orient="records")
-data = open('json_data_new.json', 'rb')
+data.to_json('json_data.json', orient="records")
+data = open('json_data.json', 'rb')
 
 #Uploading Data to S3
 
